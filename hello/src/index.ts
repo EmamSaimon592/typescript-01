@@ -1,5 +1,3 @@
-let age: number = 20;
-if (age < 50) 
-   age += 10;
+let name = "Saimon";
 
- 
+let typeName: string = "Imam "

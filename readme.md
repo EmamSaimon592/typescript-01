@@ -105,7 +105,7 @@
 ```
 
 # Functions
-<table border="1" style="border-collapse: collapse; border: 1px solid black;">
+<table border="1" style="border-collapse: collapse; border: 1px solid black; width: 50%;">
   <tr>
     <th>Functions in typescript</th>
     <th>Code</th>
@@ -114,7 +114,7 @@
     <td>1.Basic Function</td>
     <td>
       <pre>
-<code style="color:DodgerBlue">function greet(): void {
+<code style="color:DodgerBlue;">function greet(): void {
   console.log("Hello, TypeScript!");
 }</code>
       </pre>
@@ -126,7 +126,7 @@
     <td>2.Function with Parameters</td>
     <td>
       <pre>
-  <code style="color:Crimson">
+  <code style="color:Crimson;">
 
 function add(a: number, b: number): number {
   return a + b;

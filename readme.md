@@ -85,5 +85,23 @@
   </tr>
 </table>
 
+---
+# Objects
+ Objects can be nested within other objects to create complex data structures.
+```bash
+ let user: {
+ name: string,
+ address: {
+ street: string,
+ city: string
+ }
+ } = {
+ name: "John",
+ address: {
+ street: "123 Main St",
+ city: "New York"
+ }
+ }
+```
 
-
+# Functions

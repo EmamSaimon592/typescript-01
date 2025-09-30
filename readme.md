@@ -105,3 +105,250 @@
 ```
 
 # Functions
+<table border="1" style="border-collapse: collapse; border: 1px solid black;">
+  <tr>
+    <th>Functions in typescript</th>
+    <th>Code</th>
+  </tr>
+  <tr>
+    <td>1.Basic Function</td>
+    <td>
+      <pre>
+<code style="color:DodgerBlue">function greet(): void {
+  console.log("Hello, TypeScript!");
+}</code>
+      </pre>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>2.Function with Parameters</td>
+    <td>
+      <pre>
+  <code style="color:Crimson">
+
+function add(a: number, b: number): number {
+  return a + b;
+}
+   </code>
+      </pre>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>3.Function with Optional Parameter</td>
+    <td>
+      <pre>
+  <code style="color:Aquamarine">
+function greetUser(name?: string): string {
+  return name ? `Hello, ${name}!` : "Hello!";
+}
+
+   </code>
+      </pre>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>4.Function with Default Parameter</td>
+    <td>
+      <pre>
+  <code style="color:BlueViolet">
+function multiply(a: number, b: number = 2): number {
+  return a * b;
+}
+
+   </code>
+      </pre>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>5.Function with Rest Parameters</td>
+    <td>
+      <pre>
+  <code style="color:Brown">
+
+function sumAll(...numbers: number[]): number {
+  return numbers.reduce((total, num) => total + num, 0);
+}
+
+   </code>
+      </pre>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>6.Arrow Functions</td>
+    <td>
+      <pre>
+  <code style="color:Chartreuse">
+const square = (n: number): number => n * n;
+
+   </code>
+      </pre>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>7.Function Expression</td>
+    <td>
+      <pre>
+  <code style="color:Chocolate">
+const divide: (a: number, b: number) => number = function (a, b) {
+  return a / b;
+};
+
+   </code>
+      </pre>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>8.Anonymous Function</td>
+    <td>
+      <pre>
+  <code style="color:DarkOrange">
+
+setTimeout(function () {
+  console.log("This runs after 1 second");
+}, 1000);
+
+   </code>
+      </pre>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>9.Callback Function</td>
+    <td>
+      <pre>
+  <code style="color:DeepPink">
+
+function processUserInput(callback: (input: string) => void) {
+  const input = "TypeScript";
+  callback(input);
+}
+
+processUserInput((name) => {
+  console.log("Hello " + name);
+});
+
+   </code>
+      </pre>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>10.Function Overloading</td>
+    <td>
+      <pre>
+  <code style="color:Fuchsia">
+function combine(a: number, b: number): number;
+function combine(a: string, b: string): string;
+function combine(a: any, b: any): any {
+  return a + b;
+}
+
+console.log(combine(1, 2));       // 3
+console.log(combine("a", "b"));   // "ab"
+
+   </code>
+      </pre>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>11.Generic Function</td>
+    <td>
+      <pre>
+  <code style="color:Tomato">
+function identity<T>(value: T): T {
+  return value;
+}
+
+let numberResult = identity<number>(123);
+let stringResult = identity<string>("Hello");
+
+   </code>
+      </pre>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>12.Void Return Type</td>
+    <td>
+      <pre>
+  <code style="color:LightGreen">
+function logMessage(msg: string): void {
+  console.log(msg);
+}
+
+  </code>
+      </pre>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>13.Never Return Type</td>
+    <td>
+      <pre>
+  <code style="color:MediumPurple">
+
+function throwError(msg: string): never {
+  throw new Error(msg);
+}
+
+   </code>
+      </pre>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>14.Async Function</td>
+    <td>
+      <pre>
+  <code style="color:MediumSpringGreen">
+async function fetchData(): Promise<string> {
+  return "Data received";
+}
+
+   </code>
+      </pre>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>15.Function as a Parameter (Higher-order function)</td>
+    <td>
+      <pre>
+  <code style="color:Wheat">
+function calculator(a: number, b: number, operation: (x: number, y: number) => number): number {
+  return operation(a, b);
+}
+
+const result = calculator(10, 5, (x, y) => x + y); // 15
+
+   </code>
+      </pre>
+    </td>
+  </tr>
+</table>
+
+---
+
+

@@ -41,3 +41,41 @@ async function getData(): Promise<string> {
 Hello world!
 ------------------------------------------------------------
 
+
+✅ Enum
+1. Auto-incremented Values (সংখ্যা স্বয়ংক্রিয়ভাবে বাড়ে)
+enum Color {
+  Red,    // 0
+  Green,  // 1
+  Blue    // 2
+}
+
+2.Custom Numeric Values (নিজের মতো করে সংখ্যা দেওয়া):
+enum Color {
+  Red = 1,
+  Green = 5,
+  Blue = 10
+}
+
+3. String Enums (স্ট্রিং ভ্যালু সহ enum):
+enum Direction {
+  North = "NORTH",
+  South = "SOUTH",
+  East = "EAST",
+  West = "WEST"
+}
+
+4. Heterogeneous Enum (number + string একসাথে)
+enum Example {
+  No = 0,
+  Yes = "YES"
+}
+
+কেন enum ব্যবহার করবেন?
+✅ কোড ক্লিন ও বোঝার সহজ
+✅ ম্যাজিক নাম্বার এড়িয়ে যায়
+✅ টাইপ সেফ – ভুল ভ্যালু ধরতে পারে কম্পাইল টাইমেই
+
+✔শেষ কথা:
+TypeScript এ enum একটি powerful feature, যা আপনার constant values গুলোকে সুন্দরভাবে handle করতে সাহায্য করে। এটা ব্যবহার করলে কোড বেশি readable ও maintainable হয়।
+

@@ -389,3 +389,20 @@ user = ["Imam", 25];  // ✅ valid
 // user = [25, "Imam"]; // ❌ invalid
 // user = ["Imam"];     // ❌ invalid
 ```
+
+# Enum
+Enum is a powerful feature in TypeScript that helps you <b> handle constant values</b> ​​in a neat way. Using it makes your code more readable and maintainable.
+
+
+ Basic Syntax:
+ ```besh
+enum Fruit {
+  a = "Apple",
+  b = "Banana",
+  c = "cherry"
+}
+let myFruit: Fruit = Fruit.a;
+myFruit = Fruit.c;
+console.log(myFruit); // output will be cherry
+ ```
+---

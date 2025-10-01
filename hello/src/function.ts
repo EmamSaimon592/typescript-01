@@ -1,24 +1,14 @@
-// regular function
-
-// a single value
-function addOne(a: number) {
-  return a + 5;
+function sumAll(...numbers: number[]): number {
+  return numbers.reduce((total, num) => total + num, 0);
 }
 
-const result = addOne(5);
-console.log(result);
+const result1 = sumAll(1, 2, 3, 4, 5, 6); // 1 + 2 + 3 + 4 + 5 + 6 = 21
+console.log(result1); // Output: 21
 
 
-// a double value
+// ...numbers collects all arguments into an array.
 
-function addTwo(a: number, b: number) {
-  return a + b;
-}
+// .reduce() adds them all together.
 
-const result1 = addTwo(5, 10);
-console.log(result1);
+// Starts from 0 as the initial value.
 
-// arrow function
-
-const double = (x: number, y: number) => x * y;
-const result2 = double(2 , 10);

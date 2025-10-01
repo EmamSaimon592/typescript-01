@@ -1,0 +1,43 @@
+✅ generic function with Array
+
+function getFirstElement<T>(arr: T[]): T {
+  return arr[0];
+}
+
+const firstNum = getFirstElement<number>([10, 20, 30]); // 10
+const firstStr = getFirstElement(['a', 'b', 'c']); // "a"
+
+console.log(firstNum);
+console.log(firstStr);
+
+....................................
+
+✅ Aysnc function in ts
+async function getData(): Promise<string> {
+  throw new Error("Something went wrong!");
+}
+
+🔸 getData() হল একটা async function।
+🔸 কিন্তু এটা কোন data return না করে, বরং error ছুঁড়ে দেয় (throw)।
+
+async function run() {
+  try {
+    const data = await getData();  // এখানে error হবে
+    console.log(data);
+  } catch (error) {
+    console.error("Error:", (error as Error).message); // error message দেখাবে
+  }
+}
+
+🔸 run() ফাংশন getData()-কে কল করে await দিয়ে।
+🔸 যেহেতু getData() error দেয়, তাই try block এ না গিয়ে catch block-এ চলে যায়।
+🔸 catch block এ সেই error message দেখানো হয়।
+
+ যদি Error না দিতাম?
+async function getData(): Promise<string> {
+  return "Hello world!";
+}
+তাহলে output হত:
+Hello world!
+------------------------------------------------------------
+

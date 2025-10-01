@@ -276,9 +276,16 @@ console.log(combine("a", "b"));   // "ab"
 function identity<T>(value: T): T {
   return value;
 }
+//T is a type variable (you can name it anything, but T is common).
+//The function returns the same type it receives.
 
-let numberResult = identity<number>(123);
-let stringResult = identity<string>("Hello");
+const num = identity<number>(5); // T = number
+const str = identity<string>('Hi'); // T = string
+const num2 = identity(10); // T inferred as number
+
+console.log(num);
+console.log(str);
+console.log(num2);
 
    </code>
       </pre>

@@ -358,4 +358,34 @@ const result = calculator(10, 5, (x, y) => x + y); // 15
 
 ---
 
+# Union type
+ syntax
+ ```besh
+ let variableName : type1 | type2;
+ ```
+example:
+```besh
+let id: string | number;
+id = 101;          // valid
+id = "EmamSaimon"; // valid
+id = true ;        //❌
+```
 
+#  Intersection Types
+```besh
+type A = { name: string };
+type B = { age: number };
+type Person = A & B; // Intersection
+const p: Person = {
+  name: "Imam",
+  age: 25
+};
+```
+
+# Tuples
+```besh
+et user: [string, number];
+user = ["Imam", 25];  // ✅ valid
+// user = [25, "Imam"]; // ❌ invalid
+// user = ["Imam"];     // ❌ invalid
+```

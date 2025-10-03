@@ -406,3 +406,20 @@ myFruit = Fruit.c;
 console.log(myFruit); // output will be cherry
  ```
 ---
+
+# Oops In Typescript
+In TypeScript, OOPs (Object-Oriented Programming System) is fully supported using features like:
+ 1.Classes and Objects 
+
+2. Inheritance  ---> use keyword( ✅extends)
+
+3. Encapsulation ---> public , private , protected 
+    -  <b>private = Only access from inside class.</b>
+    *  <b>protected = class and subclass </b>
+    +  <b>public =  class, subclass, object</b>
+
+4. Polymorphism
+
+5. Abstraction
+
+6. Interfaces

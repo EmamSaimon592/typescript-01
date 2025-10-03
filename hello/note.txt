@@ -83,16 +83,14 @@ TypeScript এ enum একটি powerful feature, যা আপনার consta
 
 In TypeScript, OOPs (Object-Oriented Programming System) is fully supported using features like:
 
-Classes
+1.Classes and Objects 
 
-Objects
+2. Inheritance (উত্তরাধিকার)
 
-Inheritance
+3. Encapsulation
 
-Encapsulation
+4. Polymorphism
 
-Polymorphism
+5.Abstraction
 
-Abstraction
-
-Interfaces
+6. Interfaces

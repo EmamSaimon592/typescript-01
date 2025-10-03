@@ -85,9 +85,13 @@ In TypeScript, OOPs (Object-Oriented Programming System) is fully supported usin
 
 1.Classes and Objects 
 
-2. Inheritance (উত্তরাধিকার)
+2. Inheritance (উত্তরাধিকার) ---> use keyword( ✅extends)
 
-3. Encapsulation
+3. Encapsulation (গোপনতা রক্ষা)---> public , private , protected /Encapsulation হলো OOP-এর principle, যা দিয়ে আমরা class-এর internal data বা properties কে hide করি।অন্য class বা object সরাসরি access করতে পারে না।শুধু methods এর মাধ্যমে access বা modify করা যায়।এই প্রক্রিয়াকে বলা হয় data hiding বা গোপনতা রক্ষা।
+
+🔴 private = শুধুমাত্র class-এর ভিতর থেকে access করা যাবে.
+🔴 protected = class এবং subclass থেকে access করা যাবে
+🔴 public =  class, subclass, object সবখান থেকে access করা যাবে (default)
 
 4. Polymorphism
 

@@ -109,3 +109,37 @@ Interface হচ্ছে TypeScript-এর এমন একটি feature, য�
 যখন আপনি OOP (Object-Oriented Programming) এ কাজ করেন।
 
 বা Type Checking এ সাহায্য পেতে চান।
+
+
+✅Interface vs Type Alias (মোটামুটি একই কাজ করতে পারে)
+interface User {
+  name: string;
+}
+
+type Admin = {
+  name: string;
+}
+পার্থক্য:
+
+interface আবার extend করা যায়, multiple interface inherit করা যায়।
+
+type সবকিছুতে flexible, union, intersection, etc. করা যায়।
+
+✅ Interface Extend (Multiple inheritance):
+interface A {
+  a: string;
+}
+
+interface B {
+  b: number;
+}
+
+interface C extends A, B {
+  c: boolean;
+}
+
+const obj: C = {
+  a: "Hello",
+  b: 10,
+  c: true
+};

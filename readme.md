@@ -432,3 +432,37 @@ In TypeScript, OOPs (Object-Oriented Programming System) is fully supported usin
       greet(): void;
     }
     ```
+ ### Interface Class
+  ```besh
+  interface Animal {
+  name: string;
+  makeSound(): void;
+}
+
+class Dog implements Animal {
+  name: string;
+
+  constructor(name: string) {
+    this.name = name;
+  }
+
+  makeSound(): void {
+    console.log("Bark!");
+  }
+}
+
+const myDog = new Dog("Tommy");
+myDog.makeSound(); // Output: Bark!
+
+  ```
+### Interface with Function Type
+ ```besh
+ interface Add {
+  (a: number, b: number): number;
+}
+
+const addNumbers: Add = (x, y) => x + y;
+
+console.log(addNumbers(5, 3)); // Output: 8
+
+ ```

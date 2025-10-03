@@ -79,3 +79,20 @@ enum Example {
 ✔শেষ কথা:
 TypeScript এ enum একটি powerful feature, যা আপনার constant values গুলোকে সুন্দরভাবে handle করতে সাহায্য করে। এটা ব্যবহার করলে কোড বেশি readable ও maintainable হয়।
 
+---------------------------
+
+In TypeScript, OOPs (Object-Oriented Programming System) is fully supported using features like:
+
+Classes
+
+Objects
+
+Inheritance
+
+Encapsulation
+
+Polymorphism
+
+Abstraction
+
+Interfaces

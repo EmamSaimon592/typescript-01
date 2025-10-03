@@ -418,8 +418,17 @@ In TypeScript, OOPs (Object-Oriented Programming System) is fully supported usin
     *  <b>protected = class and subclass </b>
     +  <b>public =  class, subclass, object</b>
 
-4. Polymorphism
+4. Polymorphism 
 
 5. Abstraction
 
 6. Interfaces
+ Basic syntax:
+
+    ```besh
+    interface Person {
+      name: string;
+      age: number;
+      greet(): void;
+    }
+    ```

@@ -466,3 +466,13 @@ const addNumbers: Add = (x, y) => x + y;
 console.log(addNumbers(5, 3)); // Output: 8
 
  ```
+
+# Generics in TypeScript
+ + Basic syntax:
+ ```rudy
+ function identity<T>(arg: T): T {
+  return arg;
+}
+identity<number>(5);       // Output: 5
+identity<string>("Hello"); // Output: Hello
+```

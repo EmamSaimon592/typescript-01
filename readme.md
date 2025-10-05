@@ -476,3 +476,6 @@ console.log(addNumbers(5, 3)); // Output: 8
 identity<number>(5);       // Output: 5
 identity<string>("Hello"); // Output: Hello
 ```
+
+# Getter & Setter 
+In TypeScript, getters and setters allow you to define methods for accessing and updating the properties of a class in a controlled way.

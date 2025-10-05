@@ -479,3 +479,42 @@ identity<string>("Hello"); // Output: Hello
 
 # Getter & Setter 
 In TypeScript, getters and setters allow you to define methods for accessing and updating the properties of a class in a controlled way.
+
+```besh
+class Person {
+  private _name: string;
+
+  constructor(name: string) {
+    this._name = name;
+  }
+
+  // Getter---> show the name
+  get name(): string {
+    return this._name;
+  }
+
+  // Setter --> set the name
+  set name(newName: string) {
+    if (newName.length > 0) {
+      this._name = newName;
+    } else {
+      console.log("Name cannot be empty");
+    }
+  }
+}
+const person = new Person("Imam");
+
+// Use getter (no parentheses)
+console.log(person.name);  // Imam
+
+// Use setter (assignment like a property)
+person.name = "Hossain";   // Sets new name
+console.log(person.name);  // Hossain
+
+person.name = "";          // Shows error message
+
+```
+# Author 
+ <b  style = "color: GreenYellow">Emam Saimon</b> <br>
+ <b style = "color: DeepSkyBlue">Bsc in CSE </b><br>
+ <b  style="color:MediumSpringGreen">International Islamic University Chittagong ( IIUC )</b>
